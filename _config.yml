@@ -1,0 +1,7 @@
+title: "Mi Blog en GitHub Pages"
+description: "Este es mi blog personal creado con Jekyll y GitHub Pages."
+baseurl: "" # Deja vacío si el sitio está en usuario.github.io o ajusta si está en usuario.github.io/repositorio.
+url: "https://tusuario.github.io" # Cambia esta URL a la de tu sitio.
+theme: minima # Tema básico que viene con Jekyll.
+plugins:
+  - jekyll-feed
