@@ -9,6 +9,9 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     font-family: 'Inter', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Ocultar scrollbar para Chrome, Safari y Opera */
@@ -24,11 +27,14 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .centered-header h1 {
-    margin-bottom: 0.5rem;
-    font-size: 10rem;
+    margin: 0;
+    padding: 0;
     font-weight: 900;
     background: linear-gradient(180deg, 
         #ffffff 0%,
@@ -37,20 +43,60 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
 }
 
 .centered-header h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     color: #999999;
     font-weight: 400;
+    width: 90%;
+    max-width: 600px;
 }
 
 .centered-header p {
     color: #262626;
     font-weight: 400;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin: 0.5rem 0;
+    width: 90%;
+    max-width: 600px;
 }
 
 p {
   color: #CCCCCC
+}
+
+/* Media queries actualizados */
+@media screen and (max-width: 768px) {
+    .centered-header h1 {
+        font-size: 3.5rem;
+    }
+
+    .centered-header h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .centered-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .centered-header h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .centered-header h1 {
+        font-size: 2rem;
+    }
+
+    .centered-header h2 {
+        font-size: 0.9rem;
+    }
 }
