@@ -17,4 +17,137 @@ body {
 }
 
 /* Encabezado */
-heade
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #007acc;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Sección de suscripción */
+.subscribe {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  text-align: center;
+  margin-bottom: 2em;
+  border-radius: 8px;
+}
+
+.subscribe h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.subscribe input[type="email"] {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.subscribe button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007acc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: #005fa3;
+}
+
+/* Listado de artículos */
+.posts {
+  max-width: 800px;
+  width: 100%;
+}
+
+.posts h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+  color: #333;
+}
+
+.post {
+  background-color: #f9f9f9;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post h3 {
+  font-size: 1.5em;
+  color: #007acc;
+}
+
+.post p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Estilos para la página de post */
+.post-content {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 1em;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 1em;
+}
+
+/* Sección de comentarios */
+.comments {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 2em;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .subscribe input[type="email"],
+  .subscribe button {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .post h3 {
+    font-size: 1.3em;
+  }
+
+  .posts, .post-content, .comments {
+    padding: 0 1em;
+  }
+}
