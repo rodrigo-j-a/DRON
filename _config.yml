@@ -1,6 +1,6 @@
 title: "DRON"
 description: "El hub de drones FPV."
-baseurl: "" # Deja vacío si el sitio está en usuario.github.io o ajusta si está en usuario.github.io/repositorio.
+baseurl: "/DRON" # Deja vacío si el sitio está en usuario.github.io o ajusta si está en usuario.github.io/repositorio.
 url: "https://rodrigo-j-a.github.io/DRON/" # Cambia esta URL a la de tu sitio.
 theme: minima # Tema básico que viene con Jekyll.
 plugins:
