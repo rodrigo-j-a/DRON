@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+#posts ul {
+  list-style-type: none;
+}
+
+#newsletter {
+  margin-top: 20px;
+  text-align: center;
+}
