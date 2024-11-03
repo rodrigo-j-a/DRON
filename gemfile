@@ -9,3 +9,6 @@ gem "bigdecimal"
 gem "minima", "~> 2.5"
 gem "webrick", "~> 1.7"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+group :development do
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+  end
