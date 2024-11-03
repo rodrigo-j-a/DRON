@@ -3,32 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Blog en GitHub Pages</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Título del Artículo</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
   <header>
-    <h1>Mi Blog</h1>
-    <p>¡Bienvenido a mi blog personal en GitHub Pages!</p>
+    <h1>Título del Artículo</h1>
+    <p>Publicado el 3 de noviembre de 2023</p>
   </header>
-  <main>
-    <section id="posts">
-      <h2>Artículos</h2>
-      <ul>
-        <!-- Lista de artículos -->
-        <li><a href="posts/articulo1.html">Artículo 1</a></li>
-        <li><a href="posts/articulo2.html">Artículo 2</a></li>
-      </ul>
-    </section>
-    <section id="newsletter">
-      <h2>Suscríbete a la newsletter</h2>
-      <form id="newsletter-form">
-        <input type="email" id="email" placeholder="Introduce tu correo" required>
-        <button type="submit">Suscribirse</button>
-      </form>
-      <p id="mensaje"></p>
-    </section>
+
+  <main class="post-content">
+    <p>Este es el contenido del artículo. Aquí puedes escribir tus ideas y temas.</p>
+    <p>Más contenido...</p>
   </main>
-  <script src="js/scripts.js"></script>
+
+  <!-- Sección de comentarios (por ejemplo, para usar Utterances) -->
+  <section class="comments">
+    <h2>Comentarios</h2>
+    <!-- Incrustación de Utterances o cualquier otra opción de comentarios -->
+    <script src="https://utteranc.es/client.js"
+      repo="usuario/repositorio"
+      issue-term="title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+
+  <footer>
+    <p>© 2023 Mi Blog. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
